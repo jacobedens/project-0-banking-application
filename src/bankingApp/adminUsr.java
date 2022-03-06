@@ -5,10 +5,13 @@ public class adminUsr {
 	public static void main(String[] args) {
 		// view all accts
 		// approve or deny
-		// cancel
+		// cancel accts
 		
-		//deposit, wdl,trns (custAcctAction)
-
+		//deposit, wdl,trns (custAcctAction) 
+	
+	
+		
+	}
 	}
 
 }
