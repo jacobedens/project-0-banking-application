@@ -9,7 +9,7 @@ public class custAcctAction {
 	
 	public static void main(String args[]) throws Exception {
 
-		UsrMain admin = new UsrMain("admin","admin",1000000000.00,"admin","n/a");
+		UsrMain admin = new UsrMain("admin","admin",300000.00,"admin","n/a");
 		UsrMain employee = new UsrMain("employee","employee",0.00,"employee","n/a");
 		
 		Scanner a=new Scanner(System.in);
@@ -50,7 +50,7 @@ public class custAcctAction {
 			
 		//new user object with parmeters: String usr, String pwd, Double bal, String typ, String opn
 			UsrMain usr1 = new UsrMain(inputUsrNm,inputPwd,inputDep,inputAcctType , "pending");
-			System.out.println(usr1);
+			//System.out.println(usr1);
 			//System.out.println(usr1);
 			System.out.println(inputs);
 //usr2----------------------------------------------------------------------------------------------------------------------------			
@@ -90,13 +90,14 @@ public class custAcctAction {
 				System.out.println("account pending approval");
 				
 				UsrMain usr2 = new UsrMain(inputUsrNm2,inputPwd2,inputDep2,inputAcctType2, "pending");
-				System.out.println(usr2);
+				//System.out.println(usr2);
 				//System.out.println(usr1);
 				System.out.println(inputs2);
 					
 			
 //returning user------------------------------------------------------------------------------------------------------------
-
+				
+		System.out.println("");
 		System.out.println("Welcome returning user");
 		System.out.println("");
 		System.out.println("enter user name");
@@ -270,8 +271,8 @@ public class custAcctAction {
 	if(adminAction.equals("yes")) {
 		System.out.println("customer"+inputs);
 		System.out.println("customer"+inputs2);
-		System.out.println("admin"+admin);
-		System.out.println("employee"+employee);
+		System.out.println("[admin, admin, 300000.00, admin]");
+		System.out.println("[employee, employee, 0.00, employee}");
 	}
 	else {
 		System.out.println("");
